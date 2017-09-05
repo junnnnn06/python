@@ -1,6 +1,7 @@
 '''
 find the factors of an integer
 '''
+
 def factors(b):
     for i in range(1,b+1):
         if b % i == 0:
