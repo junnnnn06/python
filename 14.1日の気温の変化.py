@@ -1,6 +1,7 @@
 '''
 1日の気温の変化(2017年6月7日の東京と札幌の気温比較)
 '''
+
 import matplotlib.pyplot as plt
 
 def draw_graph():
