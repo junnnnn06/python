@@ -12,7 +12,7 @@ def draw_graph(x,y):
     plt.title('gravitational force and distance')
     plt.show()
 def generate_F_r():
-    r = range(100, 1001, 50)　#距離: 近いほど大きな引力を生じる
+    r = range(100, 1001, 50)#距離: 近いほど大きな引力を生じる
     F = []
     G = 6.674*(10**-11)
     m1 = 0.5     #物体1
