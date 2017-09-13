@@ -1,5 +1,6 @@
 '''
 分散と標準偏差
+https://blog.apar.jp/data-analysis/3390/
 '''
 
 def calculate_mean(numbers):
