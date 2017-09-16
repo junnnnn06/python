@@ -54,13 +54,29 @@ def calculate_mode(data):
             modes.append(num[0])
     return modes
 
+def callable_disper(data,mean):
+    diff = []
+    for d in data:
+        diff.append(d-mean)
+
+    squared_diff = []
+    for d in diff:
+        squared_diff.append(d**2)
+    sum_squared_diff = sum(squared_diff)
+    disper = sum_squared_diff / len(data)
+    return disper
+
 if __name__ == '__main__':
     data = read_data('mydata.txt')
     sum_data = calculate_sum(data)
     mean = calculate_mean(data)
     median = calculate_median(data)
     modes = calculate_mode(data)
+    disper = callable_disper(data,mean)
+    std = disper ** 0.5
     print('合計値は:{0}'.format(sum_data))
     print('平均値は:{0}'.format(mean))
     print('中央値は:{0}'.format(median))
     print('最頻値は:{0}'.format(modes))
+    print('分散は:{0}'.format(disper))
+    print('標準偏差は{0}'.format(std))

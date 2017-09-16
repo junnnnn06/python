@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-a_num = 103
+a_num = 83
 
 for num in range(2, a_num):
     if a_num % num == 0:
