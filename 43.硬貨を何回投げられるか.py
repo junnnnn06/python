@@ -19,7 +19,7 @@ def play_game(start_amount):
         else:
             cur_amount -= loss_amount
             print('-1.5点! 現在の所持金は{0}'.format(cur_amount))
-    print('終了! :(現在の所持金は{0}. 試行回数は{1})'.format(cur_amount, toss))
+    print('終了です :(所持金は{0}. 試行回数は{1})'.format(cur_amount, toss))
 
 if __name__ == '__main__':
     start_amount = float(input('開始時の金額を入力してください: '))
