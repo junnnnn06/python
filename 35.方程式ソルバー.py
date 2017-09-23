@@ -7,7 +7,7 @@ from sympy import Symbol, sympify, solve, SympifyError
 def plot_expression(expr1, expr2):
     solution = solve((expr1, expr2), dict = True)
     print('x:{0} y:{1}'.format(solution[0][x], solution[0][y]))
-    
+
     solutions = solve(expr1, y)
     expr1_y = solutions[0]
     solutions = solve(expr2, y)
